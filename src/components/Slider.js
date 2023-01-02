@@ -29,7 +29,17 @@ const data = [
 ];
 
 const Slider = () => {
-  return <div className="slider">{}</div>;
+  return (
+    <div className="slider">
+      {data.map((image) => (
+        <div
+          className="slide"
+          style={{ backgroundImage: `url(${image.src})` }}
+          key={image.id}
+        ></div>
+      ))}
+    </div>
+  );
 };
 
 export default Slider;
