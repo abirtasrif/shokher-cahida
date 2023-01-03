@@ -1,8 +1,5 @@
-import React from "react";
-import {
-  BsFillArrowLeftCircleFill,
-  BsFillArrowRightCircleFill,
-} from "react-icons/bs";
+import React, { useState } from "react";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const data = [
   {
@@ -33,24 +30,49 @@ const data = [
 ];
 
 const Slider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      currentSlide === 0 ? data.length - 1 : (prevSlide) => prevSlide - 1
+    );
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide(
+      currentSlide === data.length - 1 ? 0 : (prevSlide) => prevSlide + 1
+    );
+  };
+
   return (
-    <div className="slider relative">
-      {data.map((image) => (
-        <div
-          className="slide"
-          style={{ backgroundImage: `url(${image.src})` }}
-          key={image.id}
-        ></div>
-      ))}
-      <div className="btns absolute z-[1] text-gray-50 flex gap-10 bottom-20 left-1/2 -translate-x-1/2">
-        <button className="prev-btn h-10 w-14 bg-white/50 backdrop-blur-xl flex justify-center items-center">
+    <div className="frame relative">
+      <div
+        className="slider"
+        style={{ transform: `translateX(-${100 * currentSlide}vw)` }}
+      >
+        {data.map((image) => (
+          <div
+            className="slide"
+            style={{ backgroundImage: `url(${image.src})` }}
+            key={image.id}
+          ></div>
+        ))}
+      </div>
+      <div className="btns absolute left-0 right-0 bottom-20 m-auto w-fit z-[1] text-gray-50 text-2xl flex gap-10">
+        <button
+          onClick={prevSlide}
+          className="prev-btn h-14 w-20 bg-white/30 backdrop-blur-xl flex justify-center items-center hover:bg-white/70 hover:text-gray-900 duration-300"
+        >
           <span>
-            <BsFillArrowLeftCircleFill />
+            <BsArrowLeft />
           </span>
         </button>
-        <button>
-          <span className="next-btn h-10 w-14 bg-white/50 backdrop-blur-xl flex justify-center items-center">
-            <BsFillArrowRightCircleFill />
+        <button
+          onClick={nextSlide}
+          className="next-btn h-14 w-20 bg-white/30 backdrop-blur-xl flex justify-center items-center hover:bg-white/70 hover:text-gray-900 duration-300"
+        >
+          <span>
+            <BsArrowRight />
           </span>
         </button>
       </div>
