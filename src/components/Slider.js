@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 const data = [
   {
@@ -30,7 +34,7 @@ const data = [
 
 const Slider = () => {
   return (
-    <div className="slider">
+    <div className="slider relative">
       {data.map((image) => (
         <div
           className="slide"
@@ -38,6 +42,18 @@ const Slider = () => {
           key={image.id}
         ></div>
       ))}
+      <div className="btns absolute z-[1] text-gray-50 flex gap-10 bottom-20 left-1/2 -translate-x-1/2">
+        <button className="prev-btn h-10 w-14 bg-white/50 backdrop-blur-xl flex justify-center items-center">
+          <span>
+            <BsFillArrowLeftCircleFill />
+          </span>
+        </button>
+        <button>
+          <span className="next-btn h-10 w-14 bg-white/50 backdrop-blur-xl flex justify-center items-center">
+            <BsFillArrowRightCircleFill />
+          </span>
+        </button>
+      </div>
     </div>
   );
 };
