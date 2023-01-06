@@ -9,7 +9,7 @@ const Slide = ({ image }) => {
         <p className="w-1/2">
         Find the perfect DSLR camera for your needs at our online store. We offer a range of brands and features to choose from. Shop now and elevate your photography skills.
         </p>
-        <Link className="slide-btn uppercase border-2 border-violet-50  hover:text-orange-50 h-12 w-64 mt-5 duration-300 font-medium">
+        <Link className="slide-btn border-2 uppercase border-violet-50  hover:text-orange-50 h-12 w-64 mt-5 duration-300 font-medium">
           <span className="z-[2] absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-full text-center">
             Shop dslr cameras now !
           </span>
