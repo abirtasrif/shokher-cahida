@@ -7,8 +7,8 @@ const Navbar = () => {
     <div className="navbar-bg  bg-violet-700 text-violet-50 h-20 flex justify-center items-center">
       <div className="navbar container mx-auto flex items-center justify-between">
         <div className="text-xl font-semibold">
-          <span>
-            shokher<span className="text-orange-500">Cahida</span>
+          <span className="logo">
+            শখের <span className="text-orange-500">চাহিদা</span>
           </span>
         </div>
         <div className="right flex items-center gap-5">
