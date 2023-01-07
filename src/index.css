@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.maateen.me/charu-chandan-3d/font.css');
+@import url("https://fonts.maateen.me/charu-chandan-3d/font.css");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 html,
 body {
@@ -16,8 +17,12 @@ body {
 
 /* NAVBAR */
 
-.logo{
-  font-family: 'CharuChandan3D', sans-serif;
+.space-font {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.logo {
+  font-family: "CharuChandan3D", sans-serif;
 }
 
 .active {

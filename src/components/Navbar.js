@@ -4,7 +4,7 @@ import { HiShoppingCart } from "react-icons/hi2";
 
 const Navbar = () => {
   return (
-    <div className="navbar-bg  bg-violet-700 text-violet-50 h-20 flex justify-center items-center">
+    <div className="navbar-bg bg-violet-700 text-violet-50 h-20 flex justify-center items-center">
       <div className="navbar container mx-auto flex items-center justify-between">
         <div className="text-xl font-semibold">
           <span className="logo">
