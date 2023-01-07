@@ -21,7 +21,7 @@ const data = [
   {
     id: 3,
     src: "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    headline: "Experience Unmatched Sound Quality with us",
+    headline: "Experience Unmatched Sound Quality",
     body: "Take your music and calls to the next level with our selection of wireless headphones. Enjoy a seamless connection and crystal clear sound, without the hassle of tangled cords. Shop now and take your audio experience to new heights.",
     cta: "Shop Wireless Headphones",
   },
