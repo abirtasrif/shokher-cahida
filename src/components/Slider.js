@@ -7,27 +7,37 @@ const data = [
   {
     id: 1,
     src: "https://images.pexels.com/photos/1787236/pexels-photo-1787236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Close-Up Photo of Dslr Camera",
+    headline: "DSLR Cameras for Sale",
+    body: "Find the perfect DSLR camera for your needs at our online store. We offer a range of brands and features to choose from. Shop now and elevate your photography skills.",
+    cta: "Shop dslr cameras now !",
   },
   {
     id: 2,
     src: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Turned-on Flat Screen Smart Television Ahead",
+    headline: "Upgrade Your Viewing Experience",
+    body: "Get the latest and greatest in home entertainment with our selection of smart TVs. Stream your favorite movies, shows, and apps with ease, and control your TV with the touch of a button. Shop now and elevate your living room setup.",
+    cta: "Shop Smart TVs Now",
   },
   {
     id: 3,
     src: "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Top View Photo of Black Wireless Headphones",
+    headline: "Experience Unmatched Sound Quality with us",
+    body: "Take your music and calls to the next level with our selection of wireless headphones. Enjoy a seamless connection and crystal clear sound, without the hassle of tangled cords. Shop now and take your audio experience to new heights.",
+    cta: "Shop Wireless Headphones",
   },
   {
     id: 4,
     src: "https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Person Holding Game Pad",
+    headline: "Level Up Your Gaming Experience",
+    body: "Get the ultimate gaming experience with our selection of game consoles. From the latest and greatest to classic throwbacks, we've got you covered. Shop now and join the ranks of the elite gamers.",
+    cta: "Shop Game Consoles Now",
   },
   {
     id: 5,
     src: "https://images.pexels.com/photos/393047/pexels-photo-393047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Rose Gold Aluminum Case Apple Watch With White Sports Band",
+    headline: "Stay Connected with Our Smartwatches",
+    body: "Get the most out of your daily routine with our selection of smartwatches. Stay connected, track your fitness, and elevate your style with these sleek and functional devices. Shop now and take control of your day.",
+    cta: "Shop Smartwatches Now",
   },
 ];
 

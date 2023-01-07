@@ -6,16 +6,12 @@ const Slide = ({ image }) => {
     <div className="slide" style={{ backgroundImage: `url(${image.src})` }}>
       <div className="slide-text container mx-auto flex flex-col items-start justify-center h-full gap-5 text-violet-50">
         <h1 className="text-6xl  font-semibold uppercase space-font z-[1]">
-          DSLR Cameras for Sale
+          {image.headline}
         </h1>
-        <p className="w-1/2  z-[1]">
-          Find the perfect DSLR camera for your needs at our online store. We
-          offer a range of brands and features to choose from. Shop now and
-          elevate your photography skills.
-        </p>
+        <p className="w-1/2  z-[1]">{image.body}</p>
         <Link className="slide-btn border-2 uppercase border-violet-50  hover:text-orange-50 h-12 w-72 mt-5 duration-300 font-medium">
           <span className="z-[2] absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-full text-center">
-            Shop dslr cameras now !
+            {image.cta}
           </span>
         </Link>
       </div>
