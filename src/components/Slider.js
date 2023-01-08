@@ -6,17 +6,19 @@ import Slide from "./Slide";
 const data = [
   {
     id: 1,
-    src: "https://images.pexels.com/photos/1787236/pexels-photo-1787236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    headline: "DSLR Cameras for Sale",
+    src: "https://i.ibb.co/3hHFM1T/technology-g14051a43c-1920cp.jpg",
+    headline: "DSLR Cameras on Sale",
     body: "Find the perfect DSLR camera for your needs at our online store. We offer a range of brands and features to choose from. Shop now and elevate your photography skills.",
     cta: "Shop dslr cameras now !",
+    category: "cameras",
   },
   {
     id: 2,
-    src: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    src: "https://i.ibb.co/hVJfrmQ/smart-TVcp.jpg",
     headline: "Upgrade Your Viewing Experience",
     body: "Get the latest and greatest in home entertainment with our selection of smart TVs. Stream your favorite movies, shows, and apps with ease, and control your TV with the touch of a button. Shop now and elevate your living room setup.",
     cta: "Shop Smart TVs Now",
+    category: "tvs",
   },
   {
     id: 3,
@@ -24,20 +26,23 @@ const data = [
     headline: "Experience Unmatched Sound Quality",
     body: "Take your music and calls to the next level with our selection of wireless headphones. Enjoy a seamless connection and crystal clear sound, without the hassle of tangled cords. Shop now and take your audio experience to new heights.",
     cta: "Shop Wireless Headphones",
+    category: "headphones",
   },
   {
     id: 4,
-    src: "https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    src: "https://i.ibb.co/nbdnN34/controllercp.jpg",
     headline: "Level Up Your Gaming Experience",
     body: "Get the ultimate gaming experience with our selection of game consoles. From the latest and greatest to classic throwbacks, we've got you covered. Shop now and join the ranks of the elite gamers.",
     cta: "Shop Game Consoles Now",
+    category: "consoles",
   },
   {
     id: 5,
-    src: "https://images.pexels.com/photos/393047/pexels-photo-393047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    headline: "Stay Connected with Our Smartwatches",
+    src: "https://i.ibb.co/Dw0DpJx/smartwatchcp.jpg",
+    headline: "Stay Connected with everything",
     body: "Get the most out of your daily routine with our selection of smartwatches. Stay connected, track your fitness, and elevate your style with these sleek and functional devices. Shop now and take control of your day.",
     cta: "Shop Smartwatches Now",
+    category: "smartwatches",
   },
 ];
 
