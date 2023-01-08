@@ -56,7 +56,7 @@ const Cart = () => {
           <div className="col-product col-span-2">Product</div>
           <div className="col-unit-price">Unit Price</div>
           <div className="col-quantity">Quantity</div>
-          <div className="col-total-price">Total Price</div>
+          <div className="col-total-price ml-auto">Total Price</div>
         </div>
         <div className="products flex flex-col gap-5">
           {data.map((product) => (
@@ -94,14 +94,33 @@ const Cart = () => {
                   +
                 </button>
               </div>
-              <div className="total-price">
+              <div className="total-price ml-auto">
                 {currencyFormatter(product.price)}
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="cart-lower"></div>
+      <div className="cart-lower flex justify-between items-start py-8 container mx-auto">
+        <button className="clear-button uppercase border py-3 px-8 hover:bg-rose-200 hover:text-rose-600 font-medium hover:border-rose-200 duration-300">
+          Clear Cart
+        </button>
+        <div className="flex flex-col items-start gap-3">
+          <div className="top flex justify-between w-full text-2xl font-medium">
+            <span className="text-sky-500">Subtotal</span>
+            <span className="text-rose-500">$ 200</span>
+          </div>
+          <p className="text-gray-400">
+            Taxes & shipping costs are calculated at the checkout
+          </p>
+          <button className="checkout bg-sky-500 w-full py-3 uppercase font-medium text-sky-50 tracking-widest hover:bg-sky-600 duration-300">
+            Checkout
+          </button>
+          <button className="continue uppercase text-sky-500 font-medium">
+            👈 Continue Shopping
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
