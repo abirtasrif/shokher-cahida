@@ -10,7 +10,9 @@ import { currencyFormatter } from "../utilities/currencyFormatter";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-  const { cartItems: data } = useSelector((state) => state.cart);
+  const { cartItems: data, cartTotalAmount: subtotal } = useSelector(
+    (state) => state.cart
+  );
 
   const dispatch = useDispatch();
 
@@ -29,7 +31,9 @@ const Cart = () => {
   return (
     <div className="cart-section py-10 mx-auto">
       <h2 className="section-title uppercase text-2xl font-bold space-font mb-10 text-center">
-        {data.legth > 0 ? "Your Cart" : "Cart is Empty"}
+        {data.length > 0
+          ? `Your Cart with ${data.length} item${data.length > 1 ? "s" : ""}`
+          : "Your Cart is Empty"}
       </h2>
 
       <div className="text-center">
@@ -92,7 +96,7 @@ const Cart = () => {
                     </button>
                   </div>
                   <div className="total-price ml-auto">
-                    {currencyFormatter(product.price)}
+                    {currencyFormatter(product.price * product.cartQuantity)}
                   </div>
                 </div>
               ))}
@@ -108,7 +112,9 @@ const Cart = () => {
             <div className="flex flex-col items-start gap-3">
               <div className="top flex justify-between w-full text-2xl font-medium">
                 <span className="text-sky-500">Subtotal</span>
-                <span className="text-rose-500">$ 200</span>
+                <span className="text-rose-500">
+                  {currencyFormatter(subtotal)}
+                </span>
               </div>
               <p className="text-gray-400">
                 Taxes & shipping costs are calculated at the checkout

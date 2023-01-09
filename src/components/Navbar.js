@@ -1,8 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { HiShoppingCart } from "react-icons/hi2";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const { cartItems } = useSelector((state) => state.cart);
+
   return (
     <div className="navbar-bg bg-violet-700 text-violet-50 h-20 flex justify-center items-center">
       <div className="navbar container mx-auto flex items-center justify-between">
@@ -22,7 +25,7 @@ const Navbar = () => {
             <span className="cart-icon relative">
               <HiShoppingCart />
               <span className="cart-counter absolute -top-2 -right-3 text-xs bg-orange-600 h-4 w-4 rounded-full flex items-center justify-center font-medium z-[1]">
-                10
+                {cartItems.length}
               </span>
             </span>
           </NavLink>
