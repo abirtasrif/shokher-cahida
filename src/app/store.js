@@ -10,4 +10,4 @@ export const store = configureStore({
   },
 });
 
-store.dispatch(productsReducer());
+store.dispatch(productsFetching());
