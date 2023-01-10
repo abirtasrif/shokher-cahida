@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   removeFromCart,
   clearCart,
   decreaseCart,
   addToCart,
+  getSubTotal,
 } from "../features/products/cartSlice";
 import { currencyFormatter } from "../utilities/currencyFormatter";
 import { Link } from "react-router-dom";
@@ -27,6 +28,10 @@ const Cart = () => {
   const handleIncrease = (product) => {
     dispatch(addToCart(product));
   };
+
+  useEffect(()=>{
+    dispatch(getSubTotal());
+  },[data, dispatch]);
 
   return (
     <div className="cart-section py-10 mx-auto">
